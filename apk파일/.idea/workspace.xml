@@ -34,14 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/1-decode.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="657">
-              <caret line="79" column="26" selection-start-line="79" selection-start-column="26" selection-end-line="79" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#37#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="96">
+              <caret line="4" lean-forward="true" selection-end-line="176" />
             </state>
           </provider>
         </entry>
@@ -49,8 +46,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/decode2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="939">
-              <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+            <state relative-caret-position="371">
+              <caret line="101" column="19" selection-start-line="101" selection-start-column="19" selection-end-line="101" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/decode3.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="878">
+              <caret line="111" column="44" lean-forward="true" selection-start-line="111" selection-start-column="44" selection-end-line="111" selection-end-column="44" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -79,9 +88,9 @@
       <find>step</find>
       <find>FEC</find>
       <find>chunk</find>
-      <find>fill</find>
       <find>start</find>
       <find>dom</find>
+      <find>fill</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -89,8 +98,9 @@
       <list>
         <option value="$PROJECT_DIR$/decode.py" />
         <option value="$PROJECT_DIR$/1-decode.py" />
-        <option value="$PROJECT_DIR$/decode2.py" />
         <option value="$PROJECT_DIR$/decode2-modify.py" />
+        <option value="$PROJECT_DIR$/decode2.py" />
+        <option value="$PROJECT_DIR$/decode3.py" />
       </list>
     </option>
   </component>
@@ -136,7 +146,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.decode2-modify">
+  <component name="RunManager" selected="Python.decode3">
     <configuration name="1-decode" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="apk파일" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -235,11 +245,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="decode3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="apk파일" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/decode3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.decode3" />
+        <item itemvalue="Python.decode2" />
         <item itemvalue="Python.decode2-modify" />
         <item itemvalue="Python.decode" />
-        <item itemvalue="Python.decode2" />
         <item itemvalue="Python.1-decode" />
       </list>
     </recent_temporary>
@@ -256,12 +286,12 @@
       <updated>1553780943868</updated>
       <workItem from="1553780945544" duration="7508000" />
       <workItem from="1553844498877" duration="3539000" />
-      <workItem from="1553947877249" duration="13200000" />
+      <workItem from="1553947877249" duration="19273000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24247000" />
+    <option name="totallyTimeSpent" value="30320000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -291,7 +321,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info active="true" anchor="bottom" x="-68" y="1059" width="1717" height="909" id="Python Console" order="12" visible="true" weight="0.2467459" />
+      <window_info active="true" anchor="bottom" x="-68" y="1059" width="1717" height="909" id="Python Console" order="12" visible="true" weight="0.27277872" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -304,16 +334,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/decode2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="939">
-          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/decode.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="960">
@@ -336,8 +356,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/1-decode.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="657">
-          <caret line="79" column="26" selection-start-line="79" selection-start-column="26" selection-end-line="79" selection-end-column="26" />
+        <state relative-caret-position="96">
+          <caret line="4" lean-forward="true" selection-end-line="176" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-1247971763/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3587" lean-forward="true" selection-start-line="3587" selection-end-line="3587" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/decode2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="101" column="19" selection-start-line="101" selection-start-column="19" selection-end-line="101" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/decode3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="878">
+          <caret line="111" column="44" lean-forward="true" selection-start-line="111" selection-start-column="44" selection-end-line="111" selection-end-column="44" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>

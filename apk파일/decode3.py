@@ -18,6 +18,7 @@ BITS = 4
 
 FEC_BYTES = 4
 
+
 def dominant(frame_rate, chunk):
     w = np.fft.fft(chunk)
     freqs = np.fft.fftfreq(len(chunk))
@@ -58,6 +59,7 @@ def decode_bitchunks(chunk_bits, chunks):
 
     return out_bytes
 
+
 def extract_packet(freqs):
     freqs = freqs[::2]
     bit_chunks = [int(round((f - START_HZ) / STEP_HZ)) for f in freqs]
@@ -82,8 +84,7 @@ def listen_linux(frame_rate=44100, interval=0.1):
     in_packet = False
     packet = []
 
-    end_count = 0
-    mat_count = 0
+
     while True:
         l, data = mic.read()
         if not l:
@@ -91,32 +92,25 @@ def listen_linux(frame_rate=44100, interval=0.1):
 
         chunk = np.fromstring(data, dtype=np.int16)
         dom = dominant(frame_rate, chunk)
-        if dom<1000:
-            end_count += 1
-        if match(dom, HANDSHAKE_END_HZ):
-            mat_count +=1
-        else:
-            mat_count = 0
-
-        if in_packet and end_count >= 4 or mat_count == 3:
+        if in_packet and match(dom, HANDSHAKE_END_HZ):
             byte_stream = extract_packet(packet)
+            packet.append(dom)
+            continue
+        elif in_packet and dom >= 1000:
+            packet.append(dom)
+            continue
+        elif in_packet and dom < 1000:
             try:
                 byte_stream = RSCodec(FEC_BYTES).decode(byte_stream)
                 byte_stream = byte_stream.decode("utf-8")
-
                 display(byte_stream)
             except ReedSolomonError as e:
                 pass
                 # print("{}: {}".format(e, byte_stream))
-
             packet = []
             in_packet = False
-        elif in_packet and dom >=1000:
-            packet.append(dom)
         elif match(dom, HANDSHAKE_START_HZ):
             in_packet = True
-            end_count = 0
-
 
 
 if __name__ == '__main__':
