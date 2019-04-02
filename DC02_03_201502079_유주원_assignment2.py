@@ -18,7 +18,7 @@ HANDSHAKE_END_HZ = 5120 + 512
 
 START_HZ = 1024
 STEP_HZ = 256
-BITS = 2
+BITS = 2    #change
 
 FEC_BYTES = 4
 
