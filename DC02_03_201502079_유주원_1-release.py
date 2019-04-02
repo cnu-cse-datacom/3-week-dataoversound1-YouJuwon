@@ -9,8 +9,8 @@ from reedsolo import RSCodec, ReedSolomonError
 from termcolor import cprint
 from pyfiglet import figlet_format
 
-HANDSHAKE_START_HZ = 1024
-HANDSHAKE_END_HZ = 1024 + 512
+HANDSHAKE_START_HZ = 1024   #change
+HANDSHAKE_END_HZ = 1024 + 512   #change
 
 START_HZ = 1024
 STEP_HZ = 256
